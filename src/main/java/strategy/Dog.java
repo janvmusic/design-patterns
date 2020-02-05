@@ -1,4 +1,6 @@
-import fly.CantFly;
+package strategy;
+
+import strategy.fly.CantFly;
 
 public class Dog extends Animal {
 

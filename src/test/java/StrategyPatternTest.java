@@ -1,4 +1,6 @@
-import fly.ItFlys;
+import strategy.Bird;
+import strategy.Dog;
+import strategy.fly.ItFlys;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -9,12 +11,12 @@ public class StrategyPatternTest {
     @Test
     public void testTryFly() {
         Dog coco = new Dog();
-        assertThat("Dogs should not be able to fly", coco.tryToFly(), is("I can't fly"));
+        assertThat("Dogs should not be able to strategy.fly", coco.tryToFly(), is("I can't strategy.fly"));
 
         coco.setFlyingType(new ItFlys());
-        assertThat("Dogs grew wings and now it's able to fly!", coco.tryToFly(), is("Fly high!"));
+        assertThat("Dogs grew wings and now it's able to strategy.fly!", coco.tryToFly(), is("Fly high!"));
 
         Bird bird = new Bird();
-        assertThat("Birds should fly", bird.tryToFly(), is("Fly high!"));
+        assertThat("Birds should strategy.fly", bird.tryToFly(), is("Fly high!"));
     }
 }

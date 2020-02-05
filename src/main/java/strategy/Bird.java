@@ -1,5 +1,6 @@
-import fly.CantFly;
-import fly.ItFlys;
+package strategy;
+
+import strategy.fly.ItFlys;
 
 public class Bird extends Animal {
     public Bird() {

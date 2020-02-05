@@ -1,4 +1,6 @@
-import fly.Fly;
+package strategy;
+
+import strategy.fly.Fly;
 
 public class Animal {
     private String _name;
