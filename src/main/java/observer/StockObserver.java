@@ -13,7 +13,7 @@ public class StockObserver implements Observer {
         _stockGrabber = stockGrabber;
         _observerId = ++OBSERVER_ID_TRACKER;
 
-        System.out.println("New observer added: " +  _observerId);
+        System.out.println("New observer added: " + _observerId);
         stockGrabber.register(this);
     }
 
