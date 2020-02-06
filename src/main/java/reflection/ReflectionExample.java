@@ -20,6 +20,6 @@ public class ReflectionExample {
     }
 
     private String getOtherPrivate(int numericValue, String word) {
-         return "How did you get here? " + numericValue + " " + word;
+        return "How did you get here? " + numericValue + " " + word;
     }
 }
