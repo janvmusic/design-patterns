@@ -30,7 +30,7 @@ public class WorkWithAnimalsTest {
         fido.setName("Fido");
         fido.setHeight(-1);
 
-        assertThat("You should not set weight that is less than zero", fido.getHeight(), is(0));
+        assertThat("You should not set weight that is less than zero", fido.getHeight(), is(0.0));
     }
 
     @Test
@@ -39,6 +39,6 @@ public class WorkWithAnimalsTest {
         fido.setName("Fido");
         fido.setHeight(50);
 
-        assertThat("You should not set weight that is less than zero", fido.getHeight(), is(50));
+        assertThat("You should not set weight that is less than zero", fido.getHeight(), is(50.0));
     }
 }

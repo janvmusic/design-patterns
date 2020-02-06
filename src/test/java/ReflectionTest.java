@@ -43,7 +43,7 @@ public class ReflectionTest {
         Constructor<?> constructor = reflectClass.getConstructor(int.class);
 
         Class<?>[] parameterTypes = constructor.getParameterTypes();
-        for(Class<?> parameterType : parameterTypes) {
+        for (Class<?> parameterType : parameterTypes) {
             System.out.println(parameterType.getName());
         }
 
@@ -61,12 +61,12 @@ public class ReflectionTest {
         String returnValue = (String) privateMethod.invoke(instance, null);
         System.out.println("Private method: " + returnValue);
 
-        Class<?>[] methodParameters = new Class[] {Integer.TYPE, String.class};
+        Class<?>[] methodParameters = new Class[]{Integer.TYPE, String.class};
         methodToExecute = "getOtherPrivate";
         privateMethod = instance.getClass().getDeclaredMethod(methodToExecute, methodParameters);
         privateMethod.setAccessible(true);
 
-        Object[] params = new Object[] {10, "Hola"};
+        Object[] params = new Object[]{10, "Hola"};
         returnValue = (String) privateMethod.invoke(instance, params);
         System.out.println("Private method: " + returnValue);
     }
