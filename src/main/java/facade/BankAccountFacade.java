@@ -64,7 +64,7 @@ public class BankAccountFacade {
     }
 
     public String getBalance() {
-        if(isValidAccount()) {
+        if (isValidAccount()) {
             return "Your current balance is: $" + _fundsChecker.getBalance();
         }
 

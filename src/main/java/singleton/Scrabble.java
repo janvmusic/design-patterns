@@ -6,8 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Scrabble {
-    private static Scrabble _finalInstance = null;
     static boolean _firstThread = true;
+    private static Scrabble _finalInstance = null;
     String[] _scrabbleLetters = {
             "a", "a", "a", "a", "a", "a", "a", "a", "a", "b", "b", "c", "c",
             "d", "d", "d", "d", "e", "e", "e", "e", "e", "e", "e", "e", "e",

@@ -1,13 +1,12 @@
 package observer;
 
 public class StockObserver implements Observer {
+    private static int OBSERVER_ID_TRACKER = 0;
     private double _ibmPrice;
     private double _applePrice;
     private double _googlePrice;
     private int _observerId;
     private StockGrabber _stockGrabber;
-
-    private static int OBSERVER_ID_TRACKER = 0;
 
     public StockObserver(StockGrabber stockGrabber) {
         _stockGrabber = stockGrabber;
